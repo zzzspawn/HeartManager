@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:deviceIds="wear">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/inner_frame_layout_padding"
+        app:boxedEdges="all">
+        <Button
+            android:id="@+id/mybutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Press me"
+            android:layout_gravity="bottom"
+        />
+        <!--<TextView
+            android:id="@+id/mytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nothing has happened yet"
+        />-->
+        <TextView
+            android:id="@+id/mytextview"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nothing has happened yet"
+            android:layout_gravity="center"
+        />
+    </FrameLayout>
+</android.support.wear.widget.BoxInsetLayout>
